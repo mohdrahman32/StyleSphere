@@ -1,0 +1,85 @@
+/* General reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Background with blur effect */
+.background {
+  background: url('stylesphere.webp') no-repeat center center/cover;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  filter: blur(8px);  /* Apply blur only to background */
+  z-index: -1; /* Ensure background stays behind the form */
+}
+
+/* Faded overlay */
+.background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Centered login form */
+.login-page {
+  z-index: 1; /* Ensure form is on top of blurred background */
+  position: relative;
+}
+
+.login-form {
+  background-color: rgba(189, 166, 132, 0.25);
+  padding: 30px;
+  margin-top: 10%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h2 {
+  color: #E3DBC5;
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+/* Input fields and button styling */
+input.form-control {
+  border-radius: 20px;
+  border: 1px solid #E3DBC5;
+}
+
+/* Updated styles for the anchor tag styled as a button */
+a.btn-custom {
+  display: inline-block;
+  background-color: #2B2D38; /* Deep blue from the background */
+  color: #fff;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a.btn-custom:hover {
+  background-color: #3a5d8c; /* Lighter blue */
+  border-color: #d4af37; /* Gold accent */
+}
+
+/* Input icon styling */
+.input-group-text {
+  background-color: #29466e;
+  color: #E3DBC5;
+  border: 1px solid #29466e;
+  border-radius: 20px;
+}

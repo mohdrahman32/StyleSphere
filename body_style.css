@@ -1,0 +1,233 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E3DBC5;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('stylesphere.webp') center/cover no-repeat;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    color: #D4C2A2;
+    text-transform: uppercase;
+    margin-top: 140px;
+  }
+  
+  .btn-action {
+    background-color: #5E463A;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block; /* Ensure anchor behaves like a button */
+  }
+  
+  .btn-action:hover {
+    background-color: #4A403F;
+  }
+  
+  /* Add any further styling you need below */
+  
+  /* Featured Categories Section */
+  #featured-categories {
+    background-color: #D4C2A2;
+    padding: 50px 0;
+  }
+  
+  #featured-categories h2 {
+    color: #5E463A;
+    font-size: 2rem;
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    margin-bottom: 30px;
+  }
+  
+  .category-box {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .category-box img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+  }
+  
+  .category-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .category-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .category-box .btn-category {
+    background-color: #26242D;
+    color: #D4C2A2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .category-box .btn-category:hover {
+    background-color: #5E463A;
+  }
+  
+  /* Trend Spotlights Section */
+  .bg-dark {
+    background-color: #26242D !important;
+  }
+  
+  .bg-dark h2 {
+    color: #D4C2A2;
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+  }
+  
+  .bg-dark h4 {
+    color: #D4C2A2;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+  }
+  
+  .bg-dark .btn-primary {
+    background-color: #5E463A;
+    border: none;
+  }
+  
+  .bg-dark .btn-primary:hover {
+    background-color: #4A403F;
+  }
+  
+ /* Personalized Suggestions Section */
+#personalized {
+    padding: 50px 0;
+    background-color: #E3DBC5;
+  }
+  
+  #personalized h2 {
+    font-size: 2.5rem;
+    color: #5E463A;
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+  }
+  
+  .product-card {
+    background-color: #F4F1EB;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-card a {
+    display: block;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card img:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card h5 {
+    color: #26242D;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    color: #4A403F;
+  }
+  
+  
+  /* Footer Section */
+  .footer {
+    background-color: #26242D;
+    color: #D4C2A2;
+    padding: 50px 0;
+  }
+  
+  .footer h5 {
+    color: #D4C2A2;
+    font-size: 1.25rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer ul li {
+    margin: 10px 0;
+  }
+  
+  .footer ul li a {
+    color: #D4C2A2;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    color: #5E463A;
+  }
+  
+  .social-icons a {
+    color: #D4C2A2;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #5E463A;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .category-box {
+      margin-bottom: 20px;
+    }
+  }
+  

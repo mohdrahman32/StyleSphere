@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - StyleSphere</title>
+  <link rel="icon" href="favicon_io/favicon-16x16.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="login_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background">
+    <!-- The background image with blur effect is applied here -->
+  </div>
+  
+  <div class="login-page">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="login-form">
+            <h2 class="text-center">Login to StyleSphere</h2>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label" style="color: #E3DBC5;">Email</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your Gmail" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label" style="color: #E3DBC5;">Password</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="dob" class="form-label" style="color: #E3DBC5;">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+              </div>
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="remember">
+                <label class="form-check-label" for="remember" style="color: #E3DBC5;">Remember me</label>
+              </div>
+              <!-- Changed button to anchor tag -->
+              <a href="http://127.0.0.1:5500/body.html" class="btn btn-custom w-100">Submit</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
